@@ -1,16 +1,53 @@
 body {
     text-align: center;
     background-image: url("400.GIF");
+    font-family: Inter, serif;
 }
+
 .content {
     width: fit-content;
     padding: 10px;
-    margin: auto;
-    margin-top: 0;
+    margin: 0 auto auto;
     background-color: white;
-    border: 2px double blue;
+    border: 2px solid cornflowerblue;
 }
 
 h1 {
     margin: 5px;
 }
+iframe.hackclub-webring {
+    overflow: hidden;
+    border: 0;
+}
+.buttons {
+    margin: 10px;
+}
+
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/inter-v20-latin-regular.woff2') format('woff2');
+}
+
+/* inter-italic - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/inter-v20-latin-italic.woff2') format('woff2');
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/inter-v20-latin-700.woff2') format('woff2');
+}
+
