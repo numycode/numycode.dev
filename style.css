@@ -8,7 +8,7 @@ body {
     width: fit-content;
     padding: 10px;
     margin: 0 auto auto;
-    background-color: rgb(191, 191, 202);
+    background-color: rgb(228 228 255);
     border: 2px solid cornflowerblue;
 }
 
@@ -27,7 +27,7 @@ iframe.hackclub-webring {
 }
 #statuscafe {
     padding: .5em;
-    background-color: rgb(191, 191, 202);
+    background-color: rgb(228 228 255);
     border: 1px solid midnightblue;
 }
 #statuscafe-username {
