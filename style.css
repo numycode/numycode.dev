@@ -36,6 +36,12 @@ iframe.hackclub-webring {
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
 }
+.simpleanalyticsbutton {
+    width: 127px;
+    height: 31px;
+    object-fit: cover;
+}
+
 
 /* inter-regular - latin */
 @font-face {
