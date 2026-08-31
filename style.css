@@ -41,7 +41,10 @@ iframe.hackclub-webring {
     height: 31px;
     object-fit: cover;
 }
-
+.tamanotchi {
+    width: 41px;
+    height: 41px;
+}
 
 /* inter-regular - latin */
 @font-face {
