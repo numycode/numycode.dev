@@ -5,3 +5,5 @@ This is my fun little personal site! I have some of my thoughts (a blog with low
 ## Credits
 
 Background texture from Melon's [texture site](https://textures.neocities.org/).
+
+Buttons from various sources.
