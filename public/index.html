@@ -11,6 +11,7 @@
     <body>
         <div class="content">
             <h1>Hello, and welcome to numycode.dev!</h1>
+            <p><i id="time">It is currently 0:00PM in my time zone.</i></p>
             <hr />
             <nav>
                 <a href="other-sites.html">My other sites</a> -
@@ -63,6 +64,34 @@
             </footer>
         </div>
         <!-- 100% privacy-first analytics -->
+        <script>
+            // a lot of this code is stolen and edited and thrown together from https://jeremywoolley.com/ please go give him some love
+            // jeremy is a lot smarter at js than i am
+            function sleep(ms) {
+                return new Promise((resolve) => setTimeout(resolve, ms))
+            }
+            const timeElement = document.getElementById("time");
+            function timeThing() {
+                let now = Temporal.Now.zonedDateTimeISO('America/Chicago');
+                let timeString = now.toLocaleString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: true,
+                })
+                timeElement.textContent = `It is currently ${timeString} Central (my time zone)`
+            }
+            window.stopStatusUpdate = false
+            ;(async () => {
+                while (true) {
+                    if (window.stopStatusUpdate) break
+                    timeThing()
+                    const msLeftInSecond =
+                        1000 - (Temporal.Now.instant().epochMilliseconds % 1000)
+                    await sleep(msLeftInSecond) // Update every second (aligned with clock) <-- jeremy comment
+                }
+            })()
+        </script>
         <script async data-collect-dnt="true" src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     </body>
 </html>
