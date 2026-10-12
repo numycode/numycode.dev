@@ -11,7 +11,6 @@ body {
     background-color: rgb(228 228 255);
     border: 2px solid cornflowerblue;
 }
-
 h1 {
     margin: 5px;
 }
@@ -24,6 +23,14 @@ iframe.hackclub-webring {
 }
 .left-aligned {
     text-align: left;
+}
+.webringThing {
+    display: flex;
+    justify-content: center;
+}
+img.pfp {
+    width: 50px;
+    border-radius: 8px;
 }
 #statuscafe {
     padding: .5em;
