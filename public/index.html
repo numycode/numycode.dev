@@ -53,16 +53,20 @@
                 </picture>
             </a>
             <a href="https://www.getmonero.org/" rel="noopener" target="_blank"><img alt="Monero button" src="./images/xmr.png" /></a>
-            <a href="https://3kh0.net" rel="noopener" target="_blank"><img src="./images/3kh0.png" alt="3kh0's button"></a>
-            <a href="https://www.home-assistant.io/" rel="noopener" target="_blank"><img src="./images/homeassistant.gif" alt="Home Assistant button"></a>
-            <a href="https://hex4.xyz/" rel="noopener" target="_blank"><img src="./images/hex4.gif" alt="hex4's button"></a>
-            <a href="https://ingo.au" rel="noopener" target="_blank"><img src="./images/ingo.png" alt="Ingo's button"></a>
-            <a href="https://novatea.dev" rel="noopener" target="_blank"><img src="./images/novatea.gif" alt="Nova's button"></a>
+            <a href="https://3kh0.net" rel="noopener" target="_blank"><img alt="3kh0's button" src="./images/3kh0.png"></a>
+            <a href="https://www.home-assistant.io/" rel="noopener" target="_blank"><img alt="Home Assistant button" src="./images/homeassistant.gif"></a>
+            <a href="https://hex4.xyz/" rel="noopener" target="_blank"><img alt="hex4's button" src="./images/hex4.gif"></a>
+            <a href="https://ingo.au" rel="noopener" target="_blank"><img alt="Ingo's button" src="./images/ingo.png"></a>
+            <a href="https://novatea.dev" rel="noopener" target="_blank"><img alt="Nova's button" src="./images/novatea.gif"></a>
             <!-- end buttons --><br />
             <br />
             <footer>
-                <div class="webringThing"><pagering-link theme="light"></pagering-link></div>
-                <div class="webringThing"><iframe class="hackclub-webring" height="36" src="https://webring.hackclub.com/embed.html" width="88"></iframe></div>
+                <div class="webringThing">
+                    <pagering-link theme="light"></pagering-link>
+                </div>
+                <div class="webringThing">
+                    <iframe class="hackclub-webring" height="36" src="https://webring.hackclub.com/embed.html" width="88"></iframe>
+                </div>
                 <a href="https://github.com/numycode/numycode.dev">Source</a> -
                 <a href="https://github.com/numycode/" rel="me">My GitHub</a>
             </footer>
@@ -74,7 +78,9 @@
             function sleep(ms) {
                 return new Promise((resolve) => setTimeout(resolve, ms))
             }
+
             const timeElement = document.getElementById("time");
+
             function timeThing() {
                 let now = Temporal.Now.zonedDateTimeISO('America/Chicago');
                 let timeString = now.toLocaleString('en-US', {
@@ -85,6 +91,7 @@
                 })
                 timeElement.textContent = `It is currently ${timeString} Central (my time zone)`
             }
+
             window.stopStatusUpdate = false
             ;(async () => {
                 while (true) {
@@ -97,6 +104,6 @@
             })()
         </script>
         <script async data-collect-dnt="true" src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-        <script src="https://pagering.gideon.sh/embed.js" defer></script>
+        <script defer src="https://pagering.gideon.sh/embed.js"></script>
     </body>
 </html>
