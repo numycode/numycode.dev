@@ -9,3 +9,5 @@ If you really want to, it is just a static site. Just open index.html or use any
 Background texture from Melon's [texture site](https://textures.neocities.org/).
 
 Buttons from various sources.
+
+Time in my timezone is adapted from Jeremy's website.
