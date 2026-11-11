@@ -8,6 +8,12 @@
 # macos crap
 .DS_STORE
 
+# don't see any use of these
+.idea/**/numycode.dev.iml
+.idea/**/modules.xml
+.idea/**/jsonSchemas.xml
+.idea/**/inspectionProfiles
+
 # jetbrains's gitignore below
 
 # Covers JetBrains IDEs: IntelliJ, GoLand, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
